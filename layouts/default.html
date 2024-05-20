@@ -1,68 +1,94 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>The Floating-Point Guide - <%= @item[:title] %></title>
-	<% if @item[:verification] %>
-		<meta name="google-site-verification" content="SoYmbsJEmSz2s1LmZk_cku4pKwhRsU6m0ZOTgGdnTL0" />
-	<% end %>
-    <meta name="generator" content="nanoc 3.1.2">
-	<% if @item[:description] %>
-		<meta name="Description" content="<%= @item[:description] %>">
-	<% end %>
-    <link rel="stylesheet" type="text/css" href="/style.css?v1" media="screen">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <% if @item[:verification] %>
+    <meta
+      name="google-site-verification"
+      content="SoYmbsJEmSz2s1LmZk_cku4pKwhRsU6m0ZOTgGdnTL0"
+    />
+    <% end %>
+    <meta name="generator" content="nanoc 3.1.2" />
+    <% if @item[:description] %>
+    <meta name="Description" content="<%= @item[:description] %>" />
+    <% end %>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/style.css?v1"
+      media="screen"
+    />
+    <link
+      rel="shortcut icon"
+      href="/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
   </head>
-  <body>  
+  <body>
     <div id="main">
-		<h1><%= @item[:title] %></h1>
+      <h1><%= @item[:title] %></h1>
       <%= yield %>
-	  
-			<div id="license">
-			<p>&copy; Published at <a href="https://floating-point-gui.de/">floating-point-gui.de</a> under the 
-			<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License (BY)</a></p>
-		</div>
+
+      <div id="license">
+        <p>
+          &copy; Published at
+          <a href="https://floating-point-gui.de/">floating-point-gui.de</a>
+          under the
+          <a href="http://creativecommons.org/licenses/by/3.0/"
+            >Creative Commons Attribution License (BY)</a
+          >
+        </p>
+      </div>
     </div>
     <div id="sidebar">
-		<img src="/logo.png">
-		<h2>The Floating-Point Guide</h2>
-		<ul>
-			<li><a href="http://puntoflotante.org/" alt="en Espa&ntilde;ol"><img title="en Espa&ntilde;ol" src="/es.png"></a></li>
-			<li><a href="/">Home</a></li>
-			<li><a href="/basic/">Basic Answers</a></li>
-			<li><a href="/references/">References</a></li>
-			<li><a href="/xkcd/">xkcd</a></li>
-		</ul>
-	  
-		<h2>Number Formats</h2>	
-		<ul>
-			<li><a href="/formats/binary/">Binary Fractions</a></li>
-			<li><a href="/formats/fp/">Floating-Point</a></li>
-			<li><a href="/formats/exact/">Exact Types</a></li>
-			<li><a href="/formats/integer/">On Using Integers</a></li>
-		</ul>
-	
-		<h2>Errors</h2>	
-		<ul>
-			<li><a href="/errors/rounding/">Rounding</a></li>
-			<li><a href="/errors/comparison/">Comparison</a></li>
-			<li><a href="/errors/propagation/">Propagation</a></li>
-		</ul>
-		
-		<h2>Language<br>cheat sheets</h2>
-		<ul>
-			<li><a href="/languages/csharp/">C#</a></li>
-			<li><a href="/languages/java/">Java</a></li>
-			<li><a href="/languages/javascript/">JavaScript</a></li>
-			<li><a href="/languages/perl/">Perl</a></li>
-			<li><a href="/languages/php/">PHP</a></li>
-			<li><a href="/languages/python/">Python</a></li>
-			<li><a href="/languages/ruby/">Ruby</a></li>
-			<li><a href="/languages/rust/">Rust</a></li>
-			<li><a href="/languages/sql/">SQL</a></li>
-		</ul>
-    </div>
-<a href="http://github.com/brazzy/floating-point-gui.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+      <img src="/logo.png" />
+      <h2>The Floating-Point Guide</h2>
+      <ul>
+        <li>
+          <a href="http://puntoflotante.org/" alt="en Espa&ntilde;ol"
+            ><img title="en Espa&ntilde;ol" src="/es.png"
+          /></a>
+        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/basic/">Basic Answers</a></li>
+        <li><a href="/references/">References</a></li>
+        <li><a href="/xkcd/">xkcd</a></li>
+      </ul>
 
+      <h2>Number Formats</h2>
+      <ul>
+        <li><a href="/formats/binary/">Binary Fractions</a></li>
+        <li><a href="/formats/fp/">Floating-Point</a></li>
+        <li><a href="/formats/exact/">Exact Types</a></li>
+        <li><a href="/formats/integer/">On Using Integers</a></li>
+      </ul>
+
+      <h2>Errors</h2>
+      <ul>
+        <li><a href="/errors/rounding/">Rounding</a></li>
+        <li><a href="/errors/comparison/">Comparison</a></li>
+        <li><a href="/errors/propagation/">Propagation</a></li>
+      </ul>
+
+      <h2>Language<br />cheat sheets</h2>
+      <ul>
+        <li><a href="/languages/csharp/">C#</a></li>
+        <li><a href="/languages/java/">Java</a></li>
+        <li><a href="/languages/javascript/">JavaScript</a></li>
+        <li><a href="/languages/perl/">Perl</a></li>
+        <li><a href="/languages/php/">PHP</a></li>
+        <li><a href="/languages/python/">Python</a></li>
+        <li><a href="/languages/ruby/">Ruby</a></li>
+        <li><a href="/languages/rust/">Rust</a></li>
+        <li><a href="/languages/sql/">SQL</a></li>
+      </ul>
+    </div>
+    <a href="http://github.com/brazzy/floating-point-gui.de"
+      ><img
+        style="position: absolute; top: 0; right: 0; border: 0"
+        src="/forkme_right_white_ffffff.png"
+        alt="Fork me on GitHub"
+    /></a>
   </body>
 </html>
